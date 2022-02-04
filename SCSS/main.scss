@@ -1,0 +1,131 @@
+@import './variables';
+@import './buttons';
+@import './typography';
+@import './mixins';
+
+$font-weights: (
+    "regular": 300,
+    "medium": 600,
+    "bold": 900
+);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 35px;
+    margin: auto;
+    text-align: center;
+}
+
+.gray-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.location{
+    display: flex;
+    direction: column;
+    background: rgb(226, 225, 225);
+    width: 100%;
+    justify-content: center;
+    &_icon{
+        margin: 7px;
+    }
+    &_text{
+        margin: 7px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.book-it{
+    padding: 40px;
+    background: $menu-color;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: map-get($font-weights, regular );    
+        & _text{
+        margin: 20px; 
+    }
+        &_bottom-text{
+            margin: 20px;
+            color: rgb(131, 125, 125);
+            
+        }
+    .explore {
+        font-size: 16px;
+        margin: 10px;
+        background-image: linear-gradient(to bottom right,$secondary, $primary);
+        border: none;
+        border-radius: 30px;
+        box-shadow:  0px 0px 1px 0px #5d5e5f;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+}
+
+.buttons-bar{
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    
+    .how-it-works-title{
+        font-family: 'Roboto', sans-serif;
+        text-align: start;
+    }  
+}
+
+div span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $primary;
+    color: #fff;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    right: 20px;
+  }
+
+
+
+  .how-it-works{
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color:$menu-color;
+    box-shadow:  0px 2px 5px 0px #d5d7da;
+    color: black;
+    padding: 15px 5px;
+    text-align: start;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .fa-mobile-alt, .fa-list, .fa-store{
+      margin-right: 20px;
+
+  }
