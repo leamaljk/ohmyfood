@@ -5,3 +5,12 @@
         
     
 }
+
+@mixin header {
+    width:320px;
+    height: 220px;
+    margin: auto;
+    text-align: center;
+    background-size: cover;
+    z-index: 1;
+}
