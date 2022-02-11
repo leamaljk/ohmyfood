@@ -178,9 +178,53 @@ div span {
   font-weight: 300;
 }
 
-.restaurants .fa-heart {
+.restaurants_p-text-menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 22px;
+  font-weight: 300;
+}
+
+.restaurants .bi-heart {
   position: relative;
   left: 260px;
+  bottom: 5.5px;
+  font-size: 25px;
+}
+
+.restaurants .bi-heart:hover {
+  color: white;
+}
+
+.restaurants .bi-heart-fill {
+  position: relative;
+  left: 230.5px;
+  bottom: 5px;
+  font-size: 26px;
+  color: transparent;
+}
+
+.restaurants .bi-heart-fill:hover {
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+}
+
+.restaurants .new {
+  background-color: #99E2D0;
+  width: 80px;
+  padding: 15px;
+  border-radius: 0%;
+  position: relative;
+  left: 210px;
+  bottom: 220px;
+}
+
+.restaurants .new_text {
+  color: darkcyan;
 }
 
 /*Links*/
@@ -337,8 +381,8 @@ a.arrow:active {
 
 .logo-heart {
   position: relative;
-  left: 280px;
-  bottom: 40px;
+  left: 270px;
+  bottom: 42px;
   background-color: transparent;
   color: black;
   font-size: 18px;
