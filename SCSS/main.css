@@ -136,6 +136,14 @@ div span {
   width: 100%;
 }
 
+.how-it-works:hover {
+  background-color: #f2eafb;
+}
+
+.how-it-works:hover .fa-mobile-alt, .how-it-works:hover .fa-list, .how-it-works:hover .fa-store {
+  color: #762bcf;
+}
+
 .fa-mobile-alt, .fa-list, .fa-store {
   margin-right: 20px;
 }
@@ -164,20 +172,6 @@ div span {
   background-color: #f5f4f4;
 }
 
-.restaurants_h2-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.restaurants_p-text {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  margin-left: 10px;
-  font-weight: 300;
-}
-
 .restaurants_p-text-menu {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -187,30 +181,18 @@ div span {
   font-weight: 300;
 }
 
-.restaurants .bi-heart {
-  position: relative;
-  left: 260px;
-  bottom: 5.5px;
-  font-size: 25px;
+.restaurants.restaurants_h2-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.restaurants .bi-heart:hover {
-  color: white;
-}
-
-.restaurants .bi-heart-fill {
-  position: relative;
-  left: 230.5px;
-  bottom: 5px;
-  font-size: 26px;
-  color: transparent;
-}
-
-.restaurants .bi-heart-fill:hover {
-  color: transparent;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
+.restaurants.restaurants_p-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 300;
 }
 
 .restaurants .new {
@@ -224,7 +206,31 @@ div span {
 }
 
 .restaurants .new_text {
-  color: darkcyan;
+  color: #278870;
+}
+
+.bi-heart {
+  position: relative;
+  left: 260px;
+  bottom: 5.5px;
+  font-size: 25px;
+}
+
+.bi-heart-fill {
+  position: relative;
+  left: 232.5px;
+  bottom: 7px;
+  font-size: 22px;
+  color: white;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.bi-heart-fill:hover {
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
 }
 
 /*Links*/
@@ -322,8 +328,8 @@ a.arrow:active {
 /*header image*/
 .header {
   background-image: url("../Images/photo3.jpg");
-  width: 320px;
-  height: 220px;
+  width: 350px;
+  height: 250px;
   margin: auto;
   text-align: center;
   background-size: cover;
@@ -332,8 +338,8 @@ a.arrow:active {
 
 .header1 {
   background-image: url("../Images/photo4.jpg");
-  width: 320px;
-  height: 220px;
+  width: 350px;
+  height: 250px;
   margin: auto;
   text-align: center;
   background-size: cover;
@@ -342,8 +348,8 @@ a.arrow:active {
 
 .header2 {
   background-image: url("../Images/photo5.jpg");
-  width: 320px;
-  height: 220px;
+  width: 350px;
+  height: 250px;
   margin: auto;
   text-align: center;
   background-size: cover;
@@ -352,8 +358,8 @@ a.arrow:active {
 
 .header3 {
   background-image: url("../Images/photo1.jpg");
-  width: 320px;
-  height: 220px;
+  width: 350px;
+  height: 250px;
   margin: auto;
   text-align: center;
   background-size: cover;
@@ -377,15 +383,8 @@ a.arrow:active {
   border-top-right-radius: 40px;
   z-index: 1;
   margin-top: -30px;
-}
-
-.logo-heart {
-  position: relative;
-  left: 270px;
-  bottom: 42px;
-  background-color: transparent;
-  color: black;
-  font-size: 18px;
+  padding-right: 15px;
+  padding-left: 5px;
 }
 
 .main-title {
@@ -411,7 +410,7 @@ a.arrow:active {
 
 /*white boxes with checklist symbol*/
 .box {
-  width: 310px;
+  width: 100%;
   height: 55px;
   background-color: white;
   border-radius: 10px;
@@ -421,6 +420,118 @@ a.arrow:active {
   padding-top: 0.2px;
   margin-top: 10px;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box:hover .box2 {
+  -webkit-transform: translateX(-135%);
+          transform: translateX(-135%);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.box:hover .box3 {
+  -webkit-transform: translateX(-86%);
+          transform: translateX(-86%);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.box:hover .fa-circle-check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: white;
+}
+
+.box .chocholate {
+  width: 400px;
+}
+
+.box .box1 {
+  width: 90%;
+}
+
+.box .box1 .restaurants_h2-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.box .box1 .restaurants_p-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.box .box2 {
+  width: 10%;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 30px;
+  background-color: white;
+  position: relative;
+  right: 20px;
+}
+
+.box .box2 #valuta {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: white;
+  border-radius: 0px;
+  width: 20px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+/*CHECK-VALUE ANIMATION*/
+.box3 {
+  background-color: #99E2D0;
+  width: 60px;
+  height: 55px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  left: 60px;
+  bottom: 51px;
+}
+
+.box3 .valuta2 {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: white;
+  border-radius: 0px;
+  position: relative;
+  left: 15px;
+  top: 27px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.box3 .fa-circle-check {
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 17px;
+  font-size: 20px;
+  color: white;
+  /* color: transparent;*/
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+}
+
+.box3 .fa-circle-check:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: white;
 }
 
 .order {
@@ -451,18 +562,5 @@ a.arrow:active {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-}
-
-#valuta {
-  font-size: 13px;
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  background-color: white;
-  border-radius: 0px;
-  position: relative;
-  left: 270px;
-  bottom: 20px;
-  font-weight: 600;
-  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

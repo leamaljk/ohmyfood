@@ -103,6 +103,7 @@ div span {
     font-family: 'Roboto', sans-serif;
     position: relative;
     right: 20px;
+  
   }
 
 
@@ -123,10 +124,18 @@ div span {
     margin: 10px 2px;
     cursor: pointer;
     width: 100%;
+    &:hover{
+        background-color: lighten($primary, 35);
+        & .fa-mobile-alt, .fa-list, .fa-store{
+              color: darken($primary, 11);
+          }
+    }
+    
   }
 
   .fa-mobile-alt, .fa-list, .fa-store{
       margin-right: 20px;
+
 
   }
 
@@ -139,6 +148,7 @@ div span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
         &_title{
             width: 100%;
             font-family: 'Roboto', sans-serif;
@@ -148,22 +158,7 @@ div span {
             padding-top: 30px;
             background-color: $menu-color;
         }
-        &_h2-title{
-            font-family: 'Roboto', sans-serif;
-            font-size: 17px;
-            margin-left: 10px;
-            margin-top: 10px;
-            
-            
-        }
 
-        &_p-text{
-            font-family: 'Roboto', sans-serif;
-            font-size: 14px;
-            margin-left: 10px;
-            font-weight: map-get($font-weights, regular ); 
-            
-        }
 
         &_p-text-menu{
             font-family: 'Roboto', sans-serif;
@@ -173,36 +168,20 @@ div span {
             bottom: 22px;
             font-weight: map-get($font-weights, regular ); 
         }
+        &.restaurants_h2-title{
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    
+        &.restaurants_p-text{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            margin-left: 10px;
+            font-weight: map-get($font-weights, regular); 
+        }
         
-        .bi-heart{
-            position: relative;
-            left: 260px;
-            bottom: 5.5px;
-            font-size: 25px;
-            &:hover{
-                color: white;
-            }
-            
-        
-        }
-
-        .bi-heart-fill{
-            position: relative;
-            left: 230.5px;
-            bottom: 5px;
-            font-size: 26px;
-            color: transparent;
-            
-            
-            
-            
-        }
-
-        .bi-heart-fill:hover{
-            color: transparent;
-            background-image: linear-gradient(to bottom right, $secondary, $primary);
-            background-clip: text;
-        }
 
         .new{
             background-color: $tertiary;
@@ -213,11 +192,38 @@ div span {
             left: 210px;
             bottom: 220px;
             &_text{
-                color: darkcyan;
+                color: darken($tertiary, 40);
             }
         }
 
     }
+
+    .bi-heart{
+        position: relative;
+        left: 260px;
+        bottom: 5.5px;
+        font-size: 25px;
+        
+        
+    }
+
+    .bi-heart-fill{
+        position: relative;
+        left: 232.5px;
+        bottom: 7px;
+        font-size: 22px;
+        color: white;
+        transition-duration: 1000ms;
+        &:hover{
+            color: transparent;
+            background-image: linear-gradient(to bottom right, $secondary, $primary);
+            -webkit-background-clip: text;
+            
+        }
+       
+    }
+
+ 
 
     /*Links*/
 
@@ -313,8 +319,8 @@ p.footer{
 /*header image*/
 .header {
     background-image: url('../Images/photo3.jpg');
-    width:320px;
-    height: 220px;
+    width:350px;
+    height: 250px;
     margin: auto;
     text-align: center;
     background-size: cover;
@@ -352,18 +358,13 @@ p.footer{
     border-top-right-radius: 40px;
     z-index: 1;
     margin-top: -30px;
+    padding-right: 15px;
+    padding-left: 5px;
     
    
 }
 
-.logo-heart{
-position: relative;
-left: 270px;
-bottom: 42px;
-background-color: transparent;
-color: black;
-font-size: 18px;
-}
+
 
 .main-title{
     display: flex;
@@ -383,7 +384,7 @@ font-size: 18px;
 }
 /*white boxes with checklist symbol*/
 .box{
-    width: 310px;
+    width: 100%;
     height: 55px;
     background-color: white;
     border-radius: 10px;
@@ -392,9 +393,117 @@ font-size: 18px;
     padding-top: 0.2px;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
+    &:hover{
+        .box2{
+        transform: translateX(-135%);
+        transition-duration: 1000ms;
+        
+        }
+
+        .box3{
+            transform: translateX(-86%);
+            transition-duration: 1000ms;
+            
+            }
+         .fa-circle-check{
+           
+                transform: rotate(360deg);
+                color: white;
+                }
+    }
+
+    .chocholate{
+        width: 400px;
+    }
+
+    & .box1{
+    width: 90%;
     
+    & .restaurants_h2-title{
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    & .restaurants_p-text{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        margin-left: 10px;
+        font-weight: map-get($font-weights, regular ); 
+    }
+    }
+    
+     & .box2{
+        width: 10%;
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 30px;
+        background-color: white;
+        position: relative;
+        right: 20px;
+        & #valuta {
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            color: black;
+            background-color: white;
+            border-radius: 0px;
+            width: 20px;
+            
+            font-weight: map-get($font-weights, medium );
+            background-color: transparent;
+        }
+    }
 }
 
+
+/*CHECK-VALUE ANIMATION*/
+
+.box3{
+    background-color: $tertiary;
+    width: 60px;
+    height: 55px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    left: 60px;
+    bottom: 51px;
+ 
+    
+
+    .valuta2{
+        font-size: 13px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        background-color: white;
+        border-radius: 0px;
+        position: relative;
+        left:15px;
+        top: 27px;
+        
+        font-weight: map-get($font-weights, medium );
+        background-color: transparent; 
+    }
+    & .fa-circle-check{
+        color: black;
+        justify-content: center;
+        padding: 17px;
+        font-size: 20px;
+        color: white;
+       /* color: transparent;*/
+        transition: transform 1000ms;
+       
+     
+        &:hover{
+        transform: rotate(360deg);
+        color: white;
+        }
+    
+        }
+
+        
+}
 .order{
     padding-bottom: 60px;
     background: $menu-color;
@@ -421,16 +530,5 @@ font-size: 18px;
         cursor: pointer;
     }
 
-#valuta {
-    font-size: 13px;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    background-color: white;
-    border-radius: 0px;
-    position: relative;
-    left: 270px;
-    bottom: 20px;
-    font-weight: map-get($font-weights, medium );
-    background-color: transparent;
-}
+
 

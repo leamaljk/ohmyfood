@@ -13,6 +13,42 @@
         <!--font-awesome icons--> 
         <script src="https://kit.fontawesome.com/501d35e5f9.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/1a563a1123.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <style>
+            .logo-heart{
+            position: relative;
+            left: 45px;
+            bottom: 35px;
+            background-color: transparent;
+            color: black;
+            
+            }
+            .heart-fill{
+                position: relative;
+                left: 4px;
+                top: 1px;
+                }
+            
+                .bi-heart-fill{
+                    position: relative;
+                    left: 232.5px;
+                    bottom: 7px;
+                    font-size: 22px;
+                    color: white;
+                    transition-duration: 1000ms;
+                }
+            
+                .bi-heart-fill:hover{
+                    background-image: none;
+            
+                }
+            
+                .bi-heart-fill:active{
+                        color: transparent;
+                        background-image: linear-gradient(to bottom right, #9356DC, #FF79DA);
+                        background-clip: text;
+                    }
+            </style>
     </head>
 <body>
     <h1 class="logo">
@@ -34,7 +70,10 @@
     <h1 class="logo-second">The Enchanted </br> Plate</h1>
         </div>
         <span class="logo-heart">
-            <i class="far fa-heart fa-lg"></i>
+            <i class="bi bi-heart"></i>
+            <div class="heart-fill">
+            <i class="bi bi-heart-fill"></i>
+            </div>
                     </span>
 
 <!--ENTREES DIV-->
@@ -43,28 +82,67 @@
     <div class="small-titles_size"></div>
 </div>
 
+<!-- CHECK VALUE ANIMATIOOOOOOOOOOOON
+<div class="check-value">
+<div>
+    <span class="valuta2">25€</span>
+</div>
+<div class="check-mark">
+    <i class="fa-solid fa-circle-check"></i>
+</div>
+</div>
+-->
+
 <div class="box">
-    
-    <h2 class="restaurants_h2-title">Foie Gras Ravioli</h2>
-    <p class="restaurants_p-text">with truffle cream</p>
+    <div class="box1">
+   <div> <h2 class="restaurants_h2-title">Foie Gras Ravioli</h2></div>
+   <div> <p class="restaurants_p-text">with truffle cream</p></div>
+    </div>
+    <div class="box2">
     <span id="valuta">25€</span>
+    <div class="box3">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+    </div>
+    
 </div>
 <div class="box">
-    <h2 class="restaurants_h2-title">Oscietra Caviar</h2>
-    <p class="restaurants_p-text">With buckwheat blinis</p>
+    <div class="box1">
+   <div><h2 class="restaurants_h2-title">Oscietra Caviar</h2></div>
+    <div><p class="restaurants_p-text">With buckwheat blinis</p></div>
+    </div>
+    <div class="box2">
     <span id="valuta">20€</span>
+    <div class="box3">
+        <i class="fa-solid fa-circle-check"></i>
+    </div>
+    </div>
 </div>
 
 <div class="box">
-    <h2 class="restaurants_h2-title">Lobster and Leek Foam</h2>
-    <p class="restaurants_p-text">Marinated with orange zest</p>
+    <div class="box1">
+    <div><h2 class="restaurants_h2-title">Lobster and Leek Foam</h2></div>
+    <div><p class="restaurants_p-text">Marinated with orange zest</p></div>
+    </div>
+    <div class="box2">
     <span id="valuta">35€</span>
+    <div class="box3">
+        <i class="fa-solid fa-circle-check"></i>
+    </div>
+    </div>
 </div>
 
 <div class="box">
+    <div class="box1">
     <h2 class="restaurants_h2-title">Duck Foie Gras</h2>
     <p class="restaurants_p-text">with fig jam and grilled baguette</p>
+    </div>
+    <div class="box2">
     <span id="valuta">20€</span>
+    <div class="box3">
+        <i class="fa-solid fa-circle-check"></i>
+    </div>
+    </div>
 </div>
 
 <!--MAIN DISH DIV-->
@@ -74,21 +152,42 @@
 </div>
 
 <div class="box">
+    <div class="box1">
     <h2 class="restaurants_h2-title">Fresh Buttered Scallops</h2>
     <p class="restaurants_p-text">with white celery puree </p>
+    </div>
+    <div class="box2">
     <span id="valuta">40€</span>
+    <div class="box3">
+        <i class="fa-solid fa-circle-check"></i>
+    </div>
+    </div>
 </div>
 
 <div class="box">
+    <div class="box1">
     <h2 class="restaurants_h2-title">Pan-Fried Lobster</h2>
     <p class="restaurants_p-text">with mashed sweet potatoes</p>
+    </div>
+    <div class="box2">
     <span id="valuta">35€</span>
+    <div class="box3">
+        <i class="fa-solid fa-circle-check"></i>
+    </div>
+    </div>
 </div>
 
 <div class="box">
+    <div class="box1">
     <h2 class="restaurants_h2-title">Braised Ox Tail</h2>
     <p class="restaurants_p-text">with wild rice and lemon zest</p>
+    </div>
+    <div class="box2">
     <span id="valuta">44€</span>
+    <div class="box3">
+        <i class="fa-solid fa-circle-check"></i>
+    </div>
+    </div>
 </div>
 
 <!--DESSERTS DIV-->
@@ -98,21 +197,42 @@
 </div>
 
 <div class="box">
-<h2 class="restaurants_h2-title">Chocolate and Hazelnut Macaroons</h2>
+    <div class="box1">
+<h2 class="restaurants_h2-title chocholate">Chocolate and Hazelnut Macaroons</h2>
 <p class="restaurants_p-text">with caramel butter and ice cream</p>
+</div>
+<div class="box2">
 <span id="valuta">18€</span>
+<div class="box3">
+    <i class="fa-solid fa-circle-check"></i>
+</div>
+</div>
 </div>
 
 <div class="box">
+    <div class="box1">
 <h2 class="restaurants_h2-title">Baba au rhum</h2>
 <p class="restaurants_p-text">with lemon drizzle</p>
+</div>
+<div class="box2">
 <span id="valuta">22€</span>
+<div class="box3">
+    <i class="fa-solid fa-circle-check"></i>
+</div>
+</div>
 </div>
 
 <div class="box">
+    <div class="box1">
 <h2 class="restaurants_h2-title">Lemon Meringue Pie</h2>
 <p class="restaurants_p-text">Destructed</p>
+</div>
+<div class="box2">
 <span id="valuta">23€</span>
+<div class="box3">
+    <i class="fa-solid fa-circle-check"></i>
+</div>
+</div>
 </div>
 
 
