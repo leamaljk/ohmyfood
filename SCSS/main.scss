@@ -430,7 +430,9 @@ a.contact{
     text-decoration: none;
 
 }
-
+a.contact:active{
+    color: white;
+    }
 
 .fa-utensils{
     padding-right: 5px;
@@ -531,7 +533,7 @@ a.contact{
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
-    &:active{
+    &:hover{
         .box2{
         transform: translateX(-135%);
         transition-duration: 1000ms;
