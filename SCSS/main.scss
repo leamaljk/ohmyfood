@@ -1,6 +1,6 @@
 
 .loader{
-animation: fade-out 5s ease-in 3s both; 
+animation: fade-out 3s ease-in 3s both; 
 position: fixed;
 z-index: 99999;
 width: 100%;
@@ -494,7 +494,7 @@ p.footer{
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
-    &:hover{
+    &:active{
         .box2{
         transform: translateX(-135%);
         transition-duration: 1000ms;

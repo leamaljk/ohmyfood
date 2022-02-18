@@ -1,6 +1,6 @@
 .loader {
-  -webkit-animation: fade-out 5s ease-in 3s both;
-          animation: fade-out 5s ease-in 3s both;
+  -webkit-animation: fade-out 3s ease-in 3s both;
+          animation: fade-out 3s ease-in 3s both;
   position: fixed;
   z-index: 99999;
   width: 100%;
@@ -564,21 +564,21 @@ a.arrow:active {
   display: flex;
 }
 
-.box:hover .box2 {
+.box:active .box2 {
   -webkit-transform: translateX(-135%);
           transform: translateX(-135%);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
 }
 
-.box:hover .box3 {
+.box:active .box3 {
   -webkit-transform: translateX(-86%);
           transform: translateX(-86%);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
 }
 
-.box:hover .fa-circle-check {
+.box:active .fa-circle-check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   color: white;
