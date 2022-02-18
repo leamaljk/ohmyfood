@@ -7,7 +7,7 @@
   height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
   background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
-  opacity: 0.9;
+  opacity: 0.97;
   padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,8 +45,8 @@
   color: white;
   font-family: 'Shrikhand', cursive;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-animation: shadow 3s both;
-          animation: shadow 3s both;
+  -webkit-animation: shadow 3s infinite;
+          animation: shadow 3s infinite;
 }
 
 @-webkit-keyframes fade-out {
@@ -54,9 +54,32 @@
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+  20% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.8;
+  }
+  40% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.7;
+  }
+  60% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.6;
+  }
+  80% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.5;
+  }
   to {
-    -webkit-transform: translateX(110%);
-            transform: translateX(110%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.4;
+    -webkit-transform: translateY(110%);
+            transform: translateY(110%);
   }
 }
 
@@ -65,9 +88,32 @@
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+  20% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.8;
+  }
+  40% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.7;
+  }
+  60% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.6;
+  }
+  80% {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.5;
+  }
   to {
-    -webkit-transform: translateX(110%);
-            transform: translateX(110%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+    opacity: 0.4;
+    -webkit-transform: translateY(110%);
+            transform: translateY(110%);
   }
 }
 
@@ -445,6 +491,11 @@ p.footer {
   padding-left: 20px;
 }
 
+a.contact {
+  color: white;
+  text-decoration: none;
+}
+
 .fa-utensils {
   padding-right: 5px;
 }
@@ -564,21 +615,66 @@ a.arrow:active {
   display: flex;
 }
 
-.box:hover .box2 {
+.box:active .box2 {
   -webkit-transform: translateX(-135%);
           transform: translateX(-135%);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
 }
 
-.box:hover .box3 {
+@media screen and (min-width: 400px) {
+  .box:active .box2 {
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .box:active .box2 {
+    -webkit-transform: translateX(-90%);
+            transform: translateX(-90%);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .box:active .box2 {
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .box:active .box2 {
+    -webkit-transform: translateX(-27%);
+            transform: translateX(-27%);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .box:active .box2 {
+    -webkit-transform: translateX(-27%);
+            transform: translateX(-27%);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+}
+
+.box:active .box3 {
   -webkit-transform: translateX(-86%);
           transform: translateX(-86%);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
 }
 
-.box:hover .fa-circle-check {
+.box:active .fa-circle-check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   color: white;
@@ -627,6 +723,24 @@ a.arrow:active {
   background-color: transparent;
 }
 
+@media screen and (min-width: 600px) {
+  .box .box2 #valuta {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box .box2 #valuta {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .box .box2 #valuta {
+    font-size: 17px;
+  }
+}
+
 /*CHECK-VALUE ANIMATION*/
 .box3 {
   background-color: #99E2D0;
@@ -637,6 +751,62 @@ a.arrow:active {
   position: relative;
   left: 60px;
   bottom: 51px;
+}
+
+@media screen and (min-width: 750px) {
+  .box3 {
+    position: relative;
+    left: 75px;
+    bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .box3 {
+    position: relative;
+    left: 85px;
+    bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .box3 {
+    position: relative;
+    left: 98px;
+    bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .box3 {
+    position: relative;
+    left: 108px;
+    bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .box3 {
+    position: relative;
+    left: 120px;
+    bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box3 {
+    position: relative;
+    left: 130px;
+    bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .box3 {
+    position: relative;
+    left: 140px;
+    bottom: 51px;
+  }
 }
 
 .box3 .valuta2 {
