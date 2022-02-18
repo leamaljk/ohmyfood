@@ -564,21 +564,21 @@ a.arrow:active {
   display: flex;
 }
 
-.box:active .box2 {
+.box:hover .box2 {
   -webkit-transform: translateX(-135%);
           transform: translateX(-135%);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
 }
 
-.box:active .box3 {
+.box:hover .box3 {
   -webkit-transform: translateX(-86%);
           transform: translateX(-86%);
   -webkit-transition-duration: 1000ms;
           transition-duration: 1000ms;
 }
 
-.box:active .fa-circle-check {
+.box:hover .fa-circle-check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   color: white;
