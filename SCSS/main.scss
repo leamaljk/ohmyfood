@@ -1,6 +1,6 @@
 
 .loader{
-animation: fade-out 3s ease-in 3s both;
+animation: fade-out 2.5s ease-in 2.5s both;
 
 position: fixed;
 z-index: 99999;
@@ -87,17 +87,13 @@ to {
         width: 0;
     }
 
-    10%{
-        width: 20%;
-    }
+
 
     50%{
-        width: 30%;
+        width: 40%;
     }
 
-    75%{
-        width: 50%;
-    }
+
 
     100%{
         width: 100%;
@@ -318,10 +314,11 @@ div span {
             position: relative;
             left: 210px;
             bottom: 220px;
-            &_text{
-                color: darken($tertiary, 40);
-            }
+            color: darken($tertiary, 40);
+            font-size: 17px;
+            font-weight: map-get($font-weights, bold); 
         }
+           
 
     }
 
@@ -777,6 +774,7 @@ a.contact:active{
         
 }
 .order{
+    padding-top: 60px;
     padding-bottom: 60px;
     background: $menu-color;
     justify-content: center;

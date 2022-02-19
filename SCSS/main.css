@@ -1,6 +1,6 @@
 .loader {
-  -webkit-animation: fade-out 3s ease-in 3s both;
-          animation: fade-out 3s ease-in 3s both;
+  -webkit-animation: fade-out 2.5s ease-in 2.5s both;
+          animation: fade-out 2.5s ease-in 2.5s both;
   position: fixed;
   z-index: 99999;
   width: 100%;
@@ -121,14 +121,8 @@
   0% {
     width: 0;
   }
-  10% {
-    width: 20%;
-  }
   50% {
-    width: 30%;
-  }
-  75% {
-    width: 50%;
+    width: 40%;
   }
   100% {
     width: 100%;
@@ -139,14 +133,8 @@
   0% {
     width: 0;
   }
-  10% {
-    width: 20%;
-  }
   50% {
-    width: 30%;
-  }
-  75% {
-    width: 50%;
+    width: 40%;
   }
   100% {
     width: 100%;
@@ -388,10 +376,9 @@ div span {
   position: relative;
   left: 210px;
   bottom: 220px;
-}
-
-.restaurants .new_text {
   color: #278870;
+  font-size: 17px;
+  font-weight: 900;
 }
 
 .bi-heart {
@@ -1002,6 +989,7 @@ a.arrow:active {
 }
 
 .order {
+  padding-top: 60px;
   padding-bottom: 60px;
   background: #f5f4f4;
   -webkit-box-pack: center;
