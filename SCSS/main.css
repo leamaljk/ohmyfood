@@ -416,6 +416,7 @@ div span {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
+  cursor: auto;
 }
 
 /*Links*/
@@ -630,6 +631,15 @@ a.arrow:active {
   .box:hover .box2 {
     -webkit-transform: translateX(-110%);
             transform: translateX(-110%);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .box:hover .box2 {
+    -webkit-transform: translateX(-96%);
+            transform: translateX(-96%);
     -webkit-transition-duration: 1000ms;
             transition-duration: 1000ms;
   }
