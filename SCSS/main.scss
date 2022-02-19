@@ -275,6 +275,7 @@ div span {
     justify-content: center;
     flex-wrap: wrap;
     
+    
         &_title{
             width: 100%;
             font-family: 'Roboto', sans-serif;
@@ -349,8 +350,54 @@ div span {
         }
        
     }
-
- 
+/*SLIGHT LAG ANIMATION FOR ALL 4 PAGES*/
+    @keyframes slight-lag {
+        0% {
+          color: white;
+          box-shadow: 0 10px 10px 0 white;
+          box-shadow: 0 10px 10px 0 white;
+          transform: translateY(-100%);
+          opacity: 0;
+         
+        }
+        10%{
+            opacity: 0.1;
+        }
+        20% {
+            .box1{
+            color: white;
+            box-shadow: 20 10px 10px 0 white;
+            box-shadow: 20 10px 10px 0 white;
+            transform: translateY(-85%);
+            opacity: 0.1;
+            }
+          }
+          50% {
+            .box2{
+            color: white;
+            box-shadow: 0 10px 10px 0 white;
+            box-shadow: 0 10px 10px 0 white;
+            transform: translateY(-50%);
+            opacity: 0.1;
+            }
+          }
+          75% {
+            .second-title{
+            color: white;
+            box-shadow: 0 10px 10px 0 white;
+            box-shadow: 0 10px 10px 0 white;
+            transform: translateY(-25%);
+            opacity: 0.1;
+            }
+          }
+          90% {
+            opacity: 0.2;
+          }
+        100% {
+          transform: translateY(1%);
+          
+        }
+      }
 
     /*Links*/
 
@@ -359,7 +406,7 @@ div span {
         text-decoration: none;
         }
 
-        a.link:active{
+        a.links:active{
         color: black;
         }
 
@@ -554,6 +601,10 @@ a.contact:active{
             transform: translateX(-85%);
             transition-duration: 1000ms;
         }
+        @media screen and(min-width:470px){
+            transform: translateX(-76%);
+            transition-duration: 1000ms;
+        }
         @media screen and(min-width:600px){
             transform: translateX(-35%);
             transition-duration: 1000ms;
@@ -623,6 +674,7 @@ a.contact:active{
             @media screen and(min-width:600px){
                 font-size: 16px;
             }
+
             @media screen and(min-width:1200px){
                 font-size: 17px;
             }
@@ -660,9 +712,14 @@ a.contact:active{
         left: 85px;
         bottom: 51px;
     }
-    @media screen and(min-width:950px){
+    @media screen and(min-width:900px){
         position: relative;
-        left: 98px;
+        left: 95px;
+        bottom: 51px;
+    }
+    @media screen and(min-width:960px){
+        position: relative;
+        left: 102px;
         bottom: 51px;
     }
     @media screen and(min-width:1050px){
