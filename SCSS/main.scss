@@ -315,7 +315,7 @@ div span {
             left: 210px;
             bottom: 220px;
             color: darken($tertiary, 40);
-            font-size: 17px;
+            font-size: 15px;
             font-weight: map-get($font-weights, bold); 
         }
            
@@ -780,7 +780,8 @@ a.contact:active{
     justify-content: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-weight: map-get($font-weights, regular );    
+    font-weight: map-get($font-weights, regular );   
+    height: 200px; 
     
         }
     .order-button {

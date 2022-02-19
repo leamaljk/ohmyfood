@@ -377,7 +377,7 @@ div span {
   left: 210px;
   bottom: 220px;
   color: #278870;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 900;
 }
 
@@ -989,11 +989,7 @@ a.arrow:active {
 }
 
 .order {
-<<<<<<< HEAD
   padding-top: 60px;
-=======
-   padding-top: 60px;
->>>>>>> c5773e0abf26b314fb0da4bad487935cef58594d
   padding-bottom: 60px;
   background: #f5f4f4;
   -webkit-box-pack: center;
@@ -1002,6 +998,7 @@ a.arrow:active {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  height: 200px;
 }
 
 .order-button {
