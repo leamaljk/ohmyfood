@@ -546,8 +546,12 @@ a.contact:active{
             transform: translateX(-96%);
             transition-duration: 1000ms;
         }
-        @media screen and(min-width:450px){
+        @media screen and(min-width:440px){
             transform: translateX(-90%);
+            transition-duration: 1000ms;
+        }
+        @media screen and(min-width:450px){
+            transform: translateX(-85%);
             transition-duration: 1000ms;
         }
         @media screen and(min-width:600px){

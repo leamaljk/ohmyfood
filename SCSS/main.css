@@ -645,10 +645,19 @@ a.arrow:active {
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 440px) {
   .box:hover .box2 {
     -webkit-transform: translateX(-90%);
             transform: translateX(-90%);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .box:hover .box2 {
+    -webkit-transform: translateX(-85%);
+            transform: translateX(-85%);
     -webkit-transition-duration: 1000ms;
             transition-duration: 1000ms;
   }
