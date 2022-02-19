@@ -757,6 +757,14 @@ a.arrow:active {
   bottom: 51px;
 }
 
+@media screen and (min-width: 700px) {
+  .box3 {
+    position: relative;
+    left: 70px;
+    bottom: 51px;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .box3 {
     position: relative;
