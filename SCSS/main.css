@@ -989,7 +989,11 @@ a.arrow:active {
 }
 
 .order {
+<<<<<<< HEAD
   padding-top: 60px;
+=======
+   padding-top: 60px;
+>>>>>>> c5773e0abf26b314fb0da4bad487935cef58594d
   padding-bottom: 60px;
   background: #f5f4f4;
   -webkit-box-pack: center;
