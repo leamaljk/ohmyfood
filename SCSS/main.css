@@ -1002,6 +1002,7 @@ a.arrow:active {
 }
 
 .order {
+   padding-top: 60px;
   padding-bottom: 60px;
   background: #f5f4f4;
   -webkit-box-pack: center;
