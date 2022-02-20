@@ -378,9 +378,15 @@ div span {
         }
         .heart-fill{
             position: relative;
+            left: 4px;
+            top: 1.5px;
+            @media screen and(min-width:1250px){
+                position: relative;
             left: 5px;
             top: 1.5px;
             }
+            }
+
 
     
 
