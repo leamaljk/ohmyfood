@@ -18,6 +18,12 @@
   margin: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .loader {
+    width: 80%;
+  }
+}
+
 .loader_bar {
   width: 100%;
 }
@@ -178,6 +184,13 @@
           box-sizing: border-box;
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+}
+
 .logo {
   font-family: 'Shrikhand', cursive;
   font-size: 35px;
@@ -207,6 +220,14 @@
           justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .location {
+    border-radius: 3px;
+    background-color: #f7f2fc;
+    padding: 30px;
+  }
+}
+
 .location_icon {
   margin: 7px;
 }
@@ -226,6 +247,16 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+
+@media screen and (min-width: 1200px) {
+  .book-it {
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-box-shadow: 3px 3px 10px 0px #c9abee;
+            box-shadow: 3px 3px 10px 0px #c9abee;
+    margin-top: -10px;
+  }
 }
 
 .book-it _text {
@@ -269,6 +300,13 @@
   text-align: start;
 }
 
+@media screen and (min-width: 1200px) {
+  .buttons-bar .how-it-works-title {
+    text-align: center;
+    padding: 30px;
+  }
+}
+
 div span {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -309,12 +347,24 @@ div span {
   width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .how-it-works {
+    font-size: 17px;
+  }
+}
+
 .how-it-works:hover {
   background-color: #f2eafb;
 }
 
 .how-it-works:hover .fa-mobile-alt, .how-it-works:hover .fa-list, .how-it-works:hover .fa-store {
   color: #762bcf;
+}
+
+@media screen and (min-width: 1200px) {
+  .how-it-works {
+    width: 80%;
+  }
 }
 
 .fa-mobile-alt, .fa-list, .fa-store {
@@ -343,6 +393,15 @@ div span {
   padding-left: 20px;
   padding-top: 30px;
   background-color: #f5f4f4;
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants_title {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    background-color: white;
+  }
 }
 
 .restaurants_p-text-menu {
@@ -381,11 +440,34 @@ div span {
   font-weight: 900;
 }
 
+.logo-heart {
+  position: relative;
+  left: 45px;
+  bottom: 35px;
+  background-color: transparent;
+  color: black;
+}
+
+.heart-fill {
+  position: relative;
+  left: 5px;
+  top: 1.5px;
+}
+
 .bi-heart {
   position: relative;
   left: 260px;
   bottom: 5.5px;
   font-size: 25px;
+}
+
+@media screen and (min-width: 1250px) {
+  .bi-heart {
+    position: relative;
+    left: 880px;
+    bottom: 10px;
+    font-size: 35px;
+  }
 }
 
 .bi-heart-fill {
@@ -398,12 +480,30 @@ div span {
           transition-duration: 1000ms;
 }
 
-.bi-heart-fill:hover {
+@media screen and (min-width: 1250px) {
+  .bi-heart-fill {
+    position: relative;
+    left: 842px;
+    bottom: 11px;
+    font-size: 31px;
+  }
+}
+
+.bi-heart-fill:active {
   color: transparent;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   cursor: auto;
+}
+
+@media screen and (min-width: 1250px) {
+  .bi-heart-fill:active {
+    position: relative;
+    left: 842px;
+    bottom: 11px;
+    font-size: 31px;
+  }
 }
 
 /*SLIGHT LAG ANIMATION FOR ALL 4 PAGES*/
@@ -574,11 +674,27 @@ footer {
   padding-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  footer {
+    padding-bottom: 60px;
+    padding: 50px;
+  }
+}
+
 h3 {
   font-family: 'Shrikhand', cursive;
   color: white;
   padding: 20px;
   text-align: start;
+}
+
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    display: inline;
+    margin-left: 20px;
+  }
 }
 
 p.footer {
@@ -587,6 +703,19 @@ p.footer {
   font-size: 14px;
   padding-bottom: 5px;
   padding-left: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  p.footer {
+    font-size: 17px;
+    display: inline;
+    text-align: center;
+    border: 1px solid #696767;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+  }
 }
 
 a.contact {
@@ -628,6 +757,16 @@ a.arrow:active {
   z-index: 1;
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1000px;
+    height: 300px;
+    background-size: contain, no-repeat;
+    background-position: center;
+    background-position-y: -250px;
+  }
+}
+
 .header1 {
   background-image: url("../Images/photo4.jpg");
   width: 350px;
@@ -636,6 +775,16 @@ a.arrow:active {
   text-align: center;
   background-size: cover;
   z-index: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .header1 {
+    width: 1000px;
+    height: 300px;
+    background-size: contain, no-repeat;
+    background-position: center;
+    background-position-y: -280px;
+  }
 }
 
 .header2 {
@@ -648,6 +797,16 @@ a.arrow:active {
   z-index: 1;
 }
 
+@media screen and (min-width: 1200px) {
+  .header2 {
+    width: 1000px;
+    height: 300px;
+    background-size: contain, no-repeat;
+    background-position: center;
+    background-position-y: -300px;
+  }
+}
+
 .header3 {
   background-image: url("../Images/photo1.jpg");
   width: 350px;
@@ -658,12 +817,29 @@ a.arrow:active {
   z-index: 1;
 }
 
+@media screen and (min-width: 1200px) {
+  .header3 {
+    width: 1000px;
+    height: 300px;
+    background-size: contain, no-repeat;
+    background-position: center;
+    background-position-y: -250px;
+  }
+}
+
 /*second logo with Shrikhand font*/
 .logo-second {
   font-family: 'Shrikhand', cursive;
   font-size: 30px;
   margin: 10px;
   text-align: start;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-second {
+    font-size: 40px;
+    padding-left: 20px;
+  }
 }
 
 /*container with all content*/
@@ -791,6 +967,15 @@ a.arrow:active {
   .box:hover .box2 {
     -webkit-transform: translateX(-27%);
             transform: translateX(-27%);
+    -webkit-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box:hover .box2 {
+    -webkit-transform: translateX(-160%);
+            transform: translateX(-160%);
     -webkit-transition-duration: 1000ms;
             transition-duration: 1000ms;
   }
@@ -925,7 +1110,7 @@ a.arrow:active {
 @media screen and (min-width: 1050px) {
   .box3 {
     position: relative;
-    left: 108px;
+    left: -308px;
     bottom: 51px;
   }
 }
@@ -938,18 +1123,10 @@ a.arrow:active {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .box3 {
-    position: relative;
-    left: 130px;
-    bottom: 51px;
-  }
-}
-
 @media screen and (min-width: 1250px) {
   .box3 {
     position: relative;
-    left: 140px;
+    left: 240px;
     bottom: 51px;
   }
 }
