@@ -1,55 +1,61 @@
-/*
-.loader{
-animation: fade-out 2.5s ease-in 2.5s both;
-
-position: fixed;
-z-index: 99999;
-width: 100%;
-height: 100%;
-background-image: linear-gradient(#99E2D0,#9356DC, #FF79DA);
-opacity: 0.97;
-padding-top: 200px;
-display: flex;
-justify-content: center;
-margin: auto;
-@media screen and (min-width:1200px){
-        width: 80%;
-        
+/*LOADING BAR*/
+.loader {
+  -webkit-animation: fade-out 2.5s ease-in 2.5s both;
+          animation: fade-out 2.5s ease-in 2.5s both;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#99E2D0), color-stop(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+  opacity: 0.97;
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
 }
 
-&_bar{
-    
-    width: 100%;
-
-    &:before{
-    content: '';
-    display: flex;
-    justify-content: center;
-    margin: auto;   
-    border-bottom: 5px solid white;
-    width: 50%;
-    position: relative;
-    top: 77px;
-    animation: border_an 3s both;
-    
-    }
-
-    & h5{
-    text-align: center;
-    font-size: 50px;
-    color: white;
-    font-family: 'Shrikhand', cursive;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    animation: shadow 3s infinite;
-    
-   
-    }
-
-
+@media screen and (min-width: 1200px) {
+  .loader {
+    width: 80%;
+  }
 }
 
+.loader_bar {
+  width: 100%;
 }
-*/
+
+.loader_bar:before {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  border-bottom: 5px solid white;
+  width: 50%;
+  position: relative;
+  top: 77px;
+  -webkit-animation: border_an 3s both;
+          animation: border_an 3s both;
+}
+
+.loader_bar h5 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  -webkit-animation: shadow 3s infinite;
+          animation: shadow 3s infinite;
+}
+
 @-webkit-keyframes fade-out {
   from {
     -webkit-transform: translateX(0%);
@@ -83,6 +89,7 @@ margin: auto;
             transform: translateY(110%);
   }
 }
+
 @keyframes fade-out {
   from {
     -webkit-transform: translateX(0%);
