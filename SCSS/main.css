@@ -192,6 +192,7 @@
   }
 }
 
+/*OHMYFOOD TITLE*/
 .logo {
   font-family: 'Shrikhand', cursive;
   font-size: 35px;
@@ -209,6 +210,7 @@
           justify-content: center;
 }
 
+/*PART WITH LOCATION ICON AND PLACE*/
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +240,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/*GRAYISH PART WITH BUTTON EXPLORE*/
 .book-it {
   padding: 40px;
   background: #f5f4f4;
@@ -308,6 +311,7 @@
   }
 }
 
+/*PURPLE $PRIMARY COLOR CIRCLE WITH NUMBER INSIDE*/
 div span {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -329,6 +333,7 @@ div span {
   right: 20px;
 }
 
+/*HOW-IT-WORKS BOXES STYLE*/
 .how-it-works {
   font-size: 16px;
   margin: 10px;
@@ -372,7 +377,7 @@ div span {
   margin-right: 20px;
 }
 
-/*IMAGES MENU BAR*/
+/*BOXES WITH IMAGES AND TEXT ON MAIN PAGE*/
 .restaurants {
   width: 100%;
   background-color: #f5f4f4;
@@ -441,12 +446,42 @@ div span {
   font-weight: 900;
 }
 
-#logo-heart {
-  position: relative;
-  left: 70px;
-  bottom: 37px;
-  background-color: transparent;
-  color: black;
+/* MEDIA QUERIES FOR HEART ICON IN 4 MENU PAGES*/
+@media screen and (min-width: 300px) {
+  #logo-heart {
+    position: relative;
+    left: 30px;
+    bottom: 37px;
+    background-color: transparent;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  #logo-heart {
+    position: relative;
+    left: 70px;
+    bottom: 37px;
+    background-color: transparent;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #logo-heart {
+    position: relative;
+    left: 260px;
+    bottom: 37px;
+    background-color: transparent;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #logo-heart {
+    position: relative;
+    left: 25px;
+  }
 }
 
 .heart-fill {
@@ -513,6 +548,7 @@ div span {
   }
 }
 
+/*THE END OF HEART ICON EDITING */
 /*SLIGHT LAG ANIMATION FOR ALL 4 PAGES*/
 @-webkit-keyframes slight-lag {
   0% {
@@ -676,6 +712,7 @@ a.links:active {
   background-position: center;
 }
 
+/*FOOTER WITH TITLE AND PARAGRAPH*/
 footer {
   background-color: #414040;
   padding-bottom: 20px;
@@ -738,7 +775,7 @@ a.contact:active {
   padding-right: 5px;
 }
 
-/*all 4 pages incomon*/
+/*all 4 pages incomon, ARROW ICON FOR COMING BACK TO THE MAIN MENU PAGE*/
 a.arrow {
   color: black;
   text-decoration: none;
@@ -754,6 +791,7 @@ a.arrow:active {
 }
 
 /*header image*/
+/*BASTILLE HEADER*/
 .header {
   background-image: url("../Images/photo3.jpg");
   width: 350px;
@@ -774,6 +812,7 @@ a.arrow:active {
   }
 }
 
+/*LE GOURMAND HEADER */
 .header1 {
   background-image: url("../Images/photo4.jpg");
   width: 350px;
@@ -794,6 +833,7 @@ a.arrow:active {
   }
 }
 
+/*THE ENCHANTED PLATE HEADER*/
 .header2 {
   background-image: url("../Images/photo5.jpg");
   width: 350px;
@@ -814,6 +854,7 @@ a.arrow:active {
   }
 }
 
+/*FULL PALETTE HEADER*/
 .header3 {
   background-image: url("../Images/photo1.jpg");
   width: 350px;
@@ -1172,6 +1213,7 @@ a.arrow:active {
   color: white;
 }
 
+/*ORDER BUTTON IN MENU PAGES*/
 .order {
   padding-top: 60px;
   padding-bottom: 60px;

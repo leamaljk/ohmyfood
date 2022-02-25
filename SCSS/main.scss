@@ -119,7 +119,6 @@ to {
 }
 
 @import './variables';
-@import './buttons';
 @import './typography';
 @import './mixins';
 
@@ -147,7 +146,7 @@ $font-weights: (
 }
 
 
-
+/*OHMYFOOD TITLE*/
 .logo {
     font-family: 'Shrikhand', cursive;
     font-size: 35px;
@@ -162,7 +161,7 @@ $font-weights: (
     
 
 }
-
+/*PART WITH LOCATION ICON AND PLACE*/
 .location{
     display: flex;
     direction: column;
@@ -184,7 +183,7 @@ $font-weights: (
     }
    
 }
-
+/*GRAYISH PART WITH BUTTON EXPLORE*/
 .book-it{
     padding: 40px;
     background: $menu-color;
@@ -241,7 +240,7 @@ $font-weights: (
         }
     }  
 }
-
+/*PURPLE $PRIMARY COLOR CIRCLE WITH NUMBER INSIDE*/
 div span {
     display: inline-flex;
     align-items: center;
@@ -258,7 +257,7 @@ div span {
   
   }
 
-
+/*HOW-IT-WORKS BOXES STYLE*/
 
   .how-it-works{
     font-size: 16px;
@@ -302,7 +301,7 @@ div span {
   }
 
 
-  /*IMAGES MENU BAR*/
+  /*BOXES WITH IMAGES AND TEXT ON MAIN PAGE*/
 
   .restaurants{
     width: 100%;
@@ -367,13 +366,36 @@ div span {
            
 
     }
-
+/* MEDIA QUERIES FOR HEART ICON IN 4 MENU PAGES*/
     #logo-heart{
+        @media screen and(min-width:300px){
+            position: relative;
+            left: 30px;
+            bottom: 37px;
+            background-color: transparent;
+            color: black;
+            }
+
+        @media screen and(min-width:400px){
         position: relative;
         left: 70px;
         bottom: 37px;
         background-color: transparent;
         color: black;
+        }
+
+        @media screen and(min-width:600px){
+            position: relative;
+            left: 260px;
+            bottom: 37px;
+            background-color: transparent;
+            color: black;
+            }
+
+        @media screen and(min-width:1200px){
+            position: relative;
+        left: 25px;
+        }
         
         }
         .heart-fill{
@@ -386,9 +408,6 @@ div span {
             top: 1.5px;
             }
             }
-
-
-    
 
     .bi-heart{
         position: relative;
@@ -405,7 +424,6 @@ div span {
         
     }
 
-   
 
     .bi-heart-fill{
         position: relative;
@@ -434,6 +452,12 @@ div span {
         }
        
     }
+
+/*THE END OF HEART ICON EDITING */
+
+
+
+
 /*SLIGHT LAG ANIMATION FOR ALL 4 PAGES*/
     @keyframes slight-lag {
         0% {
@@ -483,7 +507,7 @@ div span {
         }
       }
 
-    /*Links*/
+ /*Links*/
 
     a.links{
         color: black;
@@ -535,6 +559,9 @@ div span {
     background-position: center;
   }
 
+
+/*FOOTER WITH TITLE AND PARAGRAPH*/  
+
 footer{
  background-color: $footer;
  padding-bottom: 20px;
@@ -578,8 +605,6 @@ p.footer{
     }
 }
 
-
-
 a.contact{
     color: white;
     text-decoration: none;
@@ -593,7 +618,9 @@ a.contact:active{
     padding-right: 5px;
 }
 
-/*all 4 pages incomon*/
+
+
+/*all 4 pages incomon, ARROW ICON FOR COMING BACK TO THE MAIN MENU PAGE*/
  a.arrow{
     color: black;
     text-decoration: none;
@@ -609,10 +636,10 @@ a.contact:active{
 }
 
 
-        
-
 
 /*header image*/
+
+/*BASTILLE HEADER*/
 .header {
     background-image: url('../Images/photo3.jpg');
     width:350px;
@@ -630,7 +657,7 @@ a.contact:active{
         
     }
   }
-
+/*LE GOURMAND HEADER */
 .header1{
     background-image: url('../Images/photo4.jpg');
     @include header;
@@ -643,6 +670,8 @@ a.contact:active{
         
     }
 }
+
+/*THE ENCHANTED PLATE HEADER*/
 .header2{
     background-image: url('../Images/photo5.jpg');
     @include header;
@@ -656,7 +685,7 @@ a.contact:active{
     }
 }
 
-
+/*FULL PALETTE HEADER*/
 .header3{
     background-image: url('../Images/photo1.jpg');
     @include header;
@@ -930,6 +959,9 @@ a.contact:active{
 
         
 }
+
+/*ORDER BUTTON IN MENU PAGES*/
+
 .order{
     padding-top: 60px;
     padding-bottom: 60px;
