@@ -7,7 +7,7 @@ Link to my web page : https://leamaljk.github.io/LeaMaljkovic_Project_3/
 
 ## Graphic Effects and Animations
 ## Home Page 
-- when arrive on the home page a loading spinner will be cover the whole screen for 3 seconds
+- when arrive on the home page a loading animation will cover the whole screen for 3 seconds
 ## Menu Pages
 - When arriving on the page, the dishes appear gradually with a slight time lag.
 - A small checkmark will appear  to the right of the dish. This tick slide from right to left.If the title of the dish is too long, it will be trimmed with suspension points (the effect display on hover)
@@ -25,8 +25,4 @@ Link to my web page : https://leamaljk.github.io/LeaMaljkovic_Project_3/
 - SASS
 - Keyframes 
 - Transition
-## This Mock-Up Home page for phone 
-![phone](/img/Homepage.png)
 
-## Mock-Up Menu page for phone
-![phone](/img/Bastille.png)
