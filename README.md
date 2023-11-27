@@ -3,7 +3,7 @@
 # ohmyfood: Online food ordering
 *Integrate a mobile website with animations in CSS*
 
-Link to my web page : https://leamaljk.github.io/LeaMaljkovic_Project_3/
+Link to my web page : https://leamaljk.github.io/ohmyfood/
 
 ## Graphic Effects and Animations
 ## Home Page 
