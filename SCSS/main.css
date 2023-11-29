@@ -1253,6 +1253,114 @@ a.arrow:active {
   color: white;
 }
 
+.items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 12px;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+@media (min-width: 960px) {
+  .items {
+    width: 100%;
+  }
+}
+
+.item {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 10px 0px #c5c6c7;
+          box-shadow: 0px 0px 10px 0px #c5c6c7;
+  -webkit-animation: fadeIn 1s ease-in-out both;
+          animation: fadeIn 1s ease-in-out both;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.item__desc {
+  width: 88%;
+  padding: 10px;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item__desc :first-of-type {
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item__desc :nth-of-type(2) {
+  font-size: smaller;
+  opacity: 0.8;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item__price {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 6px;
+  width: 5%;
+}
+
+.item__check {
+  background-color: #99E2D0;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: -20%;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item__check i {
+  font-size: 21px;
+  color: white;
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item:hover .item__check {
+  right: 0;
+}
+
+.item:hover .item__check i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.item:hover .item__desc {
+  width: 70%;
+}
+
 /*ORDER BUTTON IN MENU PAGES*/
 .order {
   padding-top: 60px;
