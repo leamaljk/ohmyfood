@@ -57,7 +57,7 @@
         .bi-heart-fill:hover{
             color: transparent;
             background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-            -webkit-background-clip: text;
+            /* -webkit-background-clip: text; */
             cursor: auto;
              
         }
@@ -65,17 +65,18 @@
 </style>
 </head>
 <body>
-    <div class="loader">
-        <div class="loader_bar">
-
-        <h5>Loading...<i class="fa-regular fa-heart"></i></h5>
-        
+   
+    <div class="loader-container" id="loader">
+        <div class="loader">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
         </div>
-    </div>
-
+      </div>
 
 
     <h1 class="logo">ohmyfood</h1>
+    
     <div class="location">
         <div class="location_icon">
             <i class="fas fa-map-marker-alt"></i>
@@ -209,5 +210,6 @@
     </div>
 
 </footer>
+
 </body>
 </html>
